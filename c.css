@@ -1,0 +1,225 @@
+*{
+    padding:0;
+    margin:0;
+  }
+  body{
+    height: 100px;
+    width: 100%;
+    background-image:url('background.png') ;
+  
+}
+.header{
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.header h3{
+  font-size: 22px;
+  /* color: white; */
+}
+
+.shop-product{
+  position: relative;
+  top:20px;
+  margin-left:450px;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+.header h3{
+  position: absolute;
+  left: 60px;
+  color: white;
+}
+.header .icon img{
+  width: 20px;
+  cursor: pointer;
+}
+.header .icon{
+  position: absolute;
+  right:50px ;
+  top: 20px;
+  display: none;
+}
+.container .c{
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+.container .c .card .productInput{
+  position: absolute;
+  top:130px;
+  width: 50px;
+  left: 40px;
+  display: none;
+}
+.container .c .card{
+  height: 200px;
+  border: 1px ;
+  position: relative;
+  width:12%;
+  margin: 20px;
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px ;
+  background-color: #EEE;
+}
+.container .c .card img{
+  position: absolute;
+  width:90%;
+  height:60%;
+  border-radius:5px ;
+  left:8px;
+  top: 5px;
+}
+.container .c .card h4{
+  position: absolute;
+  bottom:45px;
+  left:5px;
+}
+.container .c .card h6::after{
+content: ' $';
+}
+.container .c .card h6{
+  position: absolute;
+  bottom: 15px;
+  left:5px;
+}
+.container .c .card .buy:hover{
+  width: 35px;
+  height: 25px;
+}
+.container .c .card .buy{
+  position: absolute;
+  right: 0px;
+  bottom:0 ;
+  padding: 4px;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: rgb(13, 117, 44);
+  cursor: pointer;
+  transition:0.2s;
+}
+.your_cart{
+  height: 100%;
+  width:450px;
+  border: 1px solid black;
+  position: absolute;
+  right:0px;
+  top:0px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  
+}
+.your_cart .btn:hover{
+
+  background-color: red;
+  color: white;
+}
+.your_cart .btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  outline: none;
+  border-radius: 5px;
+  padding:6px;
+  cursor: pointer;
+  display: none;
+}
+.your_cart h2{
+  position: absolute;
+  left:150px;
+  top:50px;
+}
+.your_cart .Buy_now{
+  padding: 8px;
+  margin: auto auto;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgb(12, 12, 80);
+  position: absolute;
+  right:10px;
+  top:250px;
+  cursor: pointer;
+}
+.your_cart .Buy_now:hover{
+  width: 70px;
+  height: 32px;
+}
+.your_cart .product{
+  position: absolute;
+  top:100px;
+  left:50px;
+  padding: 10px;
+
+}
+.your_cart h5{
+  position: absolute;
+  top:180px;
+  right:15px;
+}
+.your_cart .massage{
+  position: absolute;
+  top:310px;
+  right:80px;
+  display: none;
+}
+.your_cart h5::before{
+  font-family: system-ui;
+  font-weight: 650;
+  font-size: 15px;
+  content: 'Total ';
+}
+.your_cart h5::after{
+  content: ' $';
+}
+.your_cart .product .Delete:hover{
+
+  background-color: red;
+  color: white;
+}
+.your_cart .product h6::after{
+  content: ' $';
+}
+.your_cart .product h4{
+  position: relative;
+  top: 45px;
+  left: 45px;
+}
+.your_cart .product h6{
+  position: relative;
+  left:70px;
+  top:60px;
+  font-size: 12px;
+}
+.your_cart .product .image{
+    position: relative;
+    width: 100px;
+    height: 60px;
+    left: -55px;
+    top: -10px;
+}
+
+.your_cart .product .Delete{
+  padding: 4px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  left:100px;
+  bottom:30px;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+}
+ 
